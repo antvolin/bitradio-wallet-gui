@@ -11,7 +11,7 @@ Dockerized wallet Bitradio with graphical Interface
     export BITRADIO_DATA="$HOME/bitradio-data/"
 
     # Folder with wallet data will be created in the location - "<HOME FOLDER YOUR USER>/bitradio-data/"
-    *** mkdir -p $BITRADIO_DATA ***
+    mkdir -p $BITRADIO_DATA
     docker run -d -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $BITRADIO_DATA/:$BITRADIO_DATA --name=bitradio-wallet-gui antvolin/bitradio-wallet-gui -datadir=$BITRADIO_DATA
     
 # You can close the wallet by clicking the appropriate button in the wallet window or by running the command:
