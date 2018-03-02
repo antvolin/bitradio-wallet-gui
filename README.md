@@ -1,7 +1,7 @@
 # bitradio-wallet-gui
 Dockerized wallet Bitradio with graphical Interface
 
-## REQUIRED TO RUN
+## REQUIRED
 
 #### Loading the container from the repository <https://hub.docker.com/r/antvolin/bitradio-wallet-gui/> and the first launch of the container
     # Allow access to the host screen
