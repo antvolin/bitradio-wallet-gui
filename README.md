@@ -33,4 +33,4 @@ Dockerized wallet Bitradio with graphical Interface
     --build-arg BITRADIO_DATA=$BITRADIO_DATA \
     -t $USER/bitradio-wallet-gui .
     
-**But keep in mind, if you rebuilt the container yourself, you should replace the old container name ("antvolin/bitradio-wallet-gui") with your own, to execute the command RUN**
+**But keep in mind, if you rebuild the container yourself, you should replace the old container name ("antvolin/bitradio-wallet-gui") with your own, to execute the command RUN**
