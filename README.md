@@ -4,7 +4,7 @@ Dockerized wallet Bitradio with graphical Interface
 ## REQUIRED
 
 #### Loading the container from the repository <https://hub.docker.com/r/antvolin/bitradio-wallet-gui/> and the first launch of the container
-    # Allow access to the host screen
+    # You may need access to the host screen, in order to allow access - run this command:
     xhost +si:localuser:root
     
     # Set runtime variable
