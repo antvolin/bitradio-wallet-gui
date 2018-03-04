@@ -12,7 +12,9 @@ Dockerized wallet Bitradio with graphical Interface
 
     # Folder with wallet data will be created in the location - "<HOME FOLDER YOUR USER>/bitradio-data/"
     mkdir -p $BITRADIO_DATA && \
-    docker run -d -e DISPLAY=unix$DISPLAY \
+    docker run -d \
+    --device /dev/dri \
+    -e DISPLAY=unix$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
     -v $BITRADIO_DATA/:$BITRADIO_DATA \
     --name=bitradio-wallet-gui \
