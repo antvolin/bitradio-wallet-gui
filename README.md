@@ -32,6 +32,7 @@ Folder with wallet data will be created in the location - "<HOME FOLDER YOUR USE
 ***
 ## OPTIONAL
 If you want to rebuild the container yourself, run the commands:
+  
     export BITRADIO_DATA="$HOME/bitradio-data/" && \
     docker build --build-arg USER_NAME=$USER \
     --build-arg BITRADIO_DATA=$BITRADIO_DATA \
