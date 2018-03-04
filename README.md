@@ -5,12 +5,15 @@ Dockerized wallet Bitradio with graphical Interface
 
 #### Loading the container from the repository <https://hub.docker.com/r/antvolin/bitradio-wallet-gui/> and the first launch of the container
 You may need access to the host screen, in order to allow access - run this command:
+
     xhost +si:localuser:root
     
 Set runtime variable
+
     export BITRADIO_DATA="$HOME/bitradio-data/"
 
 Folder with wallet data will be created in the location - "<HOME FOLDER YOUR USER>/bitradio-data/"
+    
     mkdir -p $BITRADIO_DATA && \
     docker run -d \
     --device /dev/dri \
@@ -30,6 +33,7 @@ Folder with wallet data will be created in the location - "<HOME FOLDER YOUR USE
 ## OPTIONAL
 
 If you want to rebuild the container yourself, run the commands:
+
     export BITRADIO_DATA="$HOME/bitradio-data/" && \
     docker build --build-arg USER_NAME=$USER \
     --build-arg BITRADIO_DATA=$BITRADIO_DATA \
