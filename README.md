@@ -3,7 +3,7 @@ Dockerized wallet Bitradio with graphical Interface
 
 ## REQUIRED
 
-#### Loading the container from the repository <https://hub.docker.com/r/antvolin/bitradio-wallet-gui/> and the first launch of the container
+#### Loading the image from the repository <https://hub.docker.com/r/antvolin/bitradio-wallet-gui/> and the first launch of the container
 You may need access to the host screen, in order to allow access - run this command:
   
     xhost +si:localuser:root
@@ -31,11 +31,11 @@ Folder with wallet data will be created in the location - "{HOME FOLDER YOUR USE
     docker start bitradio-wallet-gui
 ***
 ## OPTIONAL
-If you want to rebuild the container yourself, run the commands:
+If you want to rebuild the image yourself, run the commands:
   
     export BITRADIO_DATA="$HOME/bitradio-data/" && \
     docker build --build-arg USER_NAME=$USER \
     --build-arg BITRADIO_DATA=$BITRADIO_DATA \
     -t $USER/bitradio-wallet-gui .
 ***
-***But keep in mind, if you rebuild the container yourself, you should replace the old container name ("antvolin/bitradio-wallet-gui") with your own, to execute the command RUN***
+***But keep in mind, if you rebuild the image yourself, you should replace the old image name ("antvolin/bitradio-wallet-gui") with your own, to execute the command RUN***
