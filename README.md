@@ -15,7 +15,7 @@ Set runtime variable:
 Folder with wallet data will be created in the location - "{HOME FOLDER YOUR USER}/bitradio-data/":
   
     mkdir -p $BITRADIO_DATA && \
-    docker run -d \
+    docker run --net=host -d \
     --device /dev/dri \
     -e DISPLAY=unix$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
